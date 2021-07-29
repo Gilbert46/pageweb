@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 1%;
+}
+body{
+    background: whitesmoke;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 1px auto;
+}
+a{
+    margin-left: 20%;
+    color:inherit;
+    font-size: 150%;
+    text-decoration-line: none;
+}
+a:hover{
+    color: navy;
+    text-decoration-line: underline;
+}
