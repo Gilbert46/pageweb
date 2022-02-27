@@ -14,6 +14,8 @@
     <link href = "./src/css/main.css" rel="stylesheet" type="text/css"/>
         <!-- Icon link-->
         <link href="./src/img/poin.ico" rel="icon">
+        <!-- script-->
+        <script src="./src/js/pass.js" type="text/javascript"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -26,22 +28,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gilbert46.github.io/webpage/" id="dis">Games</a>
+                        <a class="nav-link" href="" id="dis">Games</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gilbert46.github.io/DWG/" id="dis">DWGs</a>
+                        <a class="nav-link" href="" id="dis">Repos</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gilbert46.github.io/maps_inter9/" id="dis">Maps</a>
+                        <a class="nav-link" href="" id="dis">DWGs</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gilbert46.github.io/Ex2_Ecommerc/" id="dis">Books</a>
+                        <a class="nav-link" href="" id="dis">Maps</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.fonamentsI.com/" id="dis">Design</a>
+                        <a class="nav-link" href="" id="dis">Books</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.guerraSuccecioI.com/" id="dis">wars</a>
+                        <a class="nav-link" href="" id="dis">Design</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="" id="dis">wars</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +59,10 @@
                     <h1>WEBSITE TO WORKS MADE</h1>
                     <p>Sets of the best web page works done by domain owner Gilbert Viader programmer and designer of web and desktop applications, during the last 5 years of research and investigation of new technologies.</p>
                     <h1>PÀGINA WEB DELS TREBALLS REALITZATS</h1>
-                    <p>Conjunt dels millors treballs de pàgines web realitzats per el propietari del domini Gilbert Viader programador i dissenyador d'aplicacions webs i d'escriptori, durant els últims 5 anys d'investigació i recerca de noves tecnologies.</p>
+                    <p>Conjunt dels millors treballs de pàgines web realitzats per el propietari del domini Gilbert Viader programador i dissenyador d'aplicacions webs i d'escriptori, durant els últims 5 anys d'investigació i recerca de noves tecnologies.
+                        Enter administrator code: <input type = "password" id="admin" onchange="enterWeb();">
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -62,30 +70,31 @@
     
     <section>
         <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class = "col-md-2">
+            <div class = "col-md-3"></div>
+            <div class = "col-md-2" id ="dis2" hidden = "">
                 <a href="https://gilbert46.github.io/webpage/"><img src="./src/img/game.png" alt="display game"/></a>
             </div>
 
-            <div class = "col-md-2">
+            <div class = "col-md-2" id ="dis3" hidden = "">
                 <a href="https://gilbert46.github.io/DWG/"><img src="./src/img/dwg.png" alt=""/></a>
             </div>
+
+            <div class = "col-md-2" id ="dis4" hidden = "">
+                <a href="https://gilbert46.github.io/reposition/"><img src="./src/img/Repos.png" alt=""/></a>
+            </div>
         </div>
         <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class = "col-md-2">
+            <div class = "col-md-2"></div>
+            <div class = "col-md-2" id = "dis5" hidden = "">
                 <a href="https://gilbert46.github.io/maps_inter9/"><img src="./src/img/map.png"  alt="Maps" /></a>
             </div>
-            <div class ="col-md-2">
+            <div class ="col-md-2" id = "dis6" hidden = ""> 
                 <a href="https://gilbert46.github.io/Ex2_Ecommerc/"><img src="./src/img/book.png"  alt="E commerc" /></a>
             </div>
-        </div>
-        <div class = "row">
-            <div class = "col-md-4"></div>
-            <div class ="col-md-2">
+            <div class ="col-md-2" id = "dis7" hidden = "">
                 <a href = "https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.fonamentsI.com/"><img src="./src/img/design.png" alt="grphics design"/></a>
             </div>
-            <div class ="col-md-2">
+            <div class ="col-md-2" id = "dis8" hidden = "">
                 <a href="https://gsxgrxhnupzmx1izaze8yw-on.drv.tw/www.guerraSuccecioI.com/"><img src="./src/img/war.png"  alt="Wars" /></a>                 
             </div>
         </div>      
@@ -95,6 +104,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
 </body>
       
 </html>
