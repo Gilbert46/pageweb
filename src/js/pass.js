@@ -15,5 +15,9 @@ function enterWeb() {
         document.getElementById("dis9").hidden = false;
         document.getElementById("dis10").hidden = false;
         document.getElementById("dis11").hidden = false;
+        document.getElementById("dis12").hidden = false;
+        document.getElementById("dis13").hidden = false;
+        document.getElementById("dis14").hidden = false;
+        document.getElementById("dis15").hidden = false;
     }
 }
